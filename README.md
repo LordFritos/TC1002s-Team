@@ -1,4 +1,4 @@
-# TC1002s-Team
+# TC1002s-Team 2
 Un repositorio para la clase TC1002s
 
 ## Equipo 2:
