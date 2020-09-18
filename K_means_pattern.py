@@ -7,12 +7,19 @@ import pandas as pd
 def main():
 	data = pd.read_csv('./data/iris.data')
 	npData = data.to_numpy()
+	npData = np.delete(npData,obj=4, axis=1)
 	print(npData)
-	X = np.array([f[:-1] for f in npData])
-	Y= npData[-1]
-	plt.plot(X,Y)
+	klearn = KMeans(n_clusters=3, random_state=0).fit(npData)
+	print(klearn.cluster_centers_)
+
+	plt.title('KMeans learn')
+	X = npData[:,0]
+	Y = npData[:,1]
+	plt.scatter(X,Y,color='b')
+	x = klearn.cluster_centers_[:,0]
+	y = klearn.cluster_centers_[:,1]
+	plt.scatter(x,y,color='r',marker='+',s=100)
 	plt.show()
-	#kmeans = KMeans(n_clusters= 3)
 
 
 if __name__ == '__main__':
