@@ -18,14 +18,7 @@ COLORS = [
     'tab:cyan',
 ]
 
-def show_clusters_centroids(clusters,
-                            centroids,
-                            title,
-                            x_var_indx=0,
-                            y_var_indx=1,
-                            x_var_name='Variable 1',
-                            y_var_name="Variable 2",
-                            keep=False):
+def show_clusters_centroids(clusters,centroids,title,x_var_indx=0,y_var_indx=1,x_var_name='Variable 1',y_var_name="Variable 2",keep=False):
 
     """
     Show the current clustering for 1 second and save the plot
@@ -167,7 +160,7 @@ def k_means(points, k, iterations=10):
 
 
 if __name__ == "__main__":
-    data = load_data('./data/iris.data')
+    data = load_data('./data/datasets_14701_19663_CC GENERAL.csv')
     k = 3
 
     X = np.array([f[:-1] for f in data])
