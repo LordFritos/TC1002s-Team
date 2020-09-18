@@ -9,8 +9,12 @@ def main():
 	npData = data.to_numpy()
 	npData = np.delete(npData,obj=4, axis=1)
 	print(npData)
+
 	klearn = KMeans(n_clusters=3, random_state=0).fit(npData)
 	print(klearn.cluster_centers_)
+	print("It ran {} iterations".format(klearn.n_iter_))
+	print(klearn.labels_)
+	print(len(npData),len(klearn.labels_))
 
 	plt.title('KMeans learn')
 	X = npData[:,0]
