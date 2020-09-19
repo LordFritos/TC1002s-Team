@@ -10,19 +10,22 @@ Guadalupe Nuñez Castro A01024201
 José Javier Verdugo A01023944
 
 ---
-En el presente, se tomó una base de datos y se aplicó la técnica clustering k-means. Con esto, se obtuvo un valor de k y se calcularon los centros del algoritmo k-means.
+En el presente, se tomó una base de datos de las cuentas bancarias como efectivo y compras. Postereriormente se aplicó la técnica clustering k-means y se decidió la cantidad de clusters con el fin de dividirlo de la mejor manera. Con esto, se obtuvo un valor de k y se calcularon los centros del algoritmo k-means para analisar y separar los datos. 
 
 
-Basado en los centros responde las siguientes preguntas
+**Basado en los centros responde las siguientes preguntas
 
-¿Crees que estos centros puedan ser representativos de los datos? ¿Por qué?
+**¿Crees que estos centros puedan ser representativos de los datos? ¿Por qué?
 
-¿Cómo obtuviste el valor de k a usar?
+**¿Cómo obtuviste el valor de k a usar?
 
-¿Los centros serían más representativos si usaras un valor más alto? ¿Más bajo?
+**¿Los centros serían más representativos si usaras un valor más alto? ¿Más bajo?
 
-¿Qué distancia tienen los centros entre sí? ¿Hay alguno que este muy cercano a otros?
+**¿Qué distancia tienen los centros entre sí? ¿Hay alguno que este muy cercano a otros?
 
-¿Qué pasaría con los centros si tuviéramos muchos outliers en el análisis de cajas y bigotes?
 
-¿Qué puedes decir de los datos basándose en los centros?
+El tiempo no  lo dejó, pero si se hubiese podido, hubieramos hecho un análisis de cajas y bigotes para el mayor entendimiento. En este análisis es importante que no hayan muchos outiliers porque las cajas estarían muy desfasada de ambos lados.
+
+Los centros que obtuvo Atom son de gran ayuda para analizar los datos, porque sabiendo los centros se puede saber que los datos que están en ese cluster se parecen de gran manera. Un analista de datos podría con esto entender que es lo que significa cada cluster.
+
+
